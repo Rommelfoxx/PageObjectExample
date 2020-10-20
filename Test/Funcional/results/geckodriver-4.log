@@ -1,0 +1,77 @@
+1602014038451	geckodriver	INFO	Listening on 127.0.0.1:54037
+1602014041524	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\4024962\\AppData\\Local\\Temp\\rust_mozprofileFvDjAd"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602014044414	Marionette	INFO	Listening on port 54045
+1602014044711	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: underscore
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: knockoutjs/knockout
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: mage/url
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Customer/js/section-config
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: mage/storage
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_Catalog/js/view/component
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_PersonalizedSearch/js/model/search
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_PersonalizedSearch/js/util/url
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_Catalog/js/view/product-list
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_Theme/js/view/messages
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_PersonalizedSearch/js/model/search-provider
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_RRFind/js/model/find-api
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_RRFind/js/util/filter
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_RRFind/js/model/autocomplete
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: jquery/validate
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_RRPlacements/js/action/scripts-placements
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_RRPlacements/js/action/main-placements
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_RRPlacements/js/action/rich-callback
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Corra_Analytics/js/model/store-data
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: es6-collections
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: jquery/jquery-storageapi
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: uniformJs
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Persistent/js/view/customer-data-mixin
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/modal/modal
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: knockoutjs/knockout-es5
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/lib/knockout/template/engine
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/lib/knockout/bindings/bootstrap
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/lib/knockout/extender/observable_array
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/lib/knockout/extender/bound-nodes
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: mage/apply/scripts
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: mage/collapsible
+http://requirejs.org/docs/errors.html#scripterror
+1602014065456	Marionette	INFO	Stopped listening on port 54045
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

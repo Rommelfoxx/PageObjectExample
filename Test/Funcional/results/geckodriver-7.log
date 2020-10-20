@@ -1,0 +1,16 @@
+1602015770079	geckodriver	INFO	Listening on 127.0.0.1:54646
+1602015773024	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\4024962\\AppData\\Local\\Temp\\rust_mozprofileqo0Cbq"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1602015777852	Marionette	INFO	Listening on port 54654
+1602015778317	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602015778541	Marionette	INFO	Stopped listening on port 54654
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 351))
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

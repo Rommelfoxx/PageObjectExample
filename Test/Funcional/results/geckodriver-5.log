@@ -1,0 +1,49 @@
+1602014068783	geckodriver	INFO	Listening on 127.0.0.1:54115
+1602014071807	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\4024962\\AppData\\Local\\Temp\\rust_mozprofilezyCbwK"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602014074693	Marionette	INFO	Listening on port 54123
+1602014074978	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/modal/modal
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: knockoutjs/knockout-es5
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: mage/collapsible
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/lib/knockout/template/engine
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/lib/knockout/bindings/bootstrap
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/lib/knockout/extender/observable_array
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/lib/knockout/extender/bound-nodes
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: mage/apply/scripts
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: jquery/jquery-storageapi
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: uniformJs
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: Magento_Ui/js/lib/core/collection
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_Catalog/js/model/product
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_Catalog/js/view/product
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: RCHLO_Catalog/js/view/product-list/toolbar
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: mage/cookies
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: mage/utils/wrapper
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://www.riachuelo.com.br/static/version1601482377/frontend/Corra/webjump/pt_BR/requirejs/require.js, line 166: Error: Script error for: jquery/jquery.metadata
+http://requirejs.org/docs/errors.html#scripterror
+1602014092873	Marionette	INFO	Stopped listening on port 54123
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
