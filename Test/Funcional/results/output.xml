@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20201014 17:09:44.990" rpa="false">
-<suite id="s1" name="Test-Case" source="D:\automationpractice\Test\Funcional\test-case">
-<suite id="s1-s1" name="Cadastro usuario" source="D:\automationpractice\Test\Funcional\test-case\Cadastro_usuario.robot">
-<test id="s1-s1-t1" name="Cenario 2: Acessar formulario para novo cadastro">
+<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20201022 16:34:02.925" rpa="false">
+<suite id="s1" name="Cadastro Usuario" source="D:\PageObjectExample\Test\funcional\test-case\cadastro_usuario.robot">
+<test id="s1-t1" name="Cenario 1: Abrir tela de cadastro">
 <kw name="Abrir navegador" library="resource" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -10,37 +9,36 @@
 <arg>url:${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201014 17:09:45.551" level="INFO">Opening browser 'chrome' to base url 'url:http://automationpractice.com/'.</msg>
-<status status="PASS" starttime="20201014 17:09:45.551" endtime="20201014 17:09:49.104"></status>
+<msg timestamp="20201022 16:34:03.454" level="INFO">Opening browser 'chrome' to base url 'url:http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20201022 16:34:03.454" endtime="20201022 16:34:06.945"></status>
 </kw>
-<status status="PASS" starttime="20201014 17:09:45.551" endtime="20201014 17:09:49.105"></status>
+<status status="PASS" starttime="20201022 16:34:03.454" endtime="20201022 16:34:06.945"></status>
 </kw>
-<kw name="Dado que estou na pagina de autenticação" library="autenticacao">
 <kw name="Dado que estão na pagina HOME" library="home">
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${HOME_URL}</arg>
 </arguments>
-<msg timestamp="20201014 17:09:49.107" level="INFO">Opening url 'http://automationpractice.com/'</msg>
-<status status="PASS" starttime="20201014 17:09:49.107" endtime="20201014 17:09:55.382"></status>
+<msg timestamp="20201022 16:34:06.947" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20201022 16:34:06.947" endtime="20201022 16:34:13.173"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20201014 17:09:55.382" endtime="20201014 17:09:55.385"></status>
+<status status="PASS" starttime="20201022 16:34:13.173" endtime="20201022 16:34:13.176"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>${HOME_TITLE_TEXT}</arg>
 </arguments>
-<msg timestamp="20201014 17:09:55.393" level="INFO">Page title is 'My Store'.</msg>
-<status status="PASS" starttime="20201014 17:09:55.385" endtime="20201014 17:09:55.393"></status>
+<msg timestamp="20201022 16:34:13.182" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201022 16:34:13.176" endtime="20201022 16:34:13.182"></status>
 </kw>
-<status status="PASS" starttime="20201014 17:09:49.106" endtime="20201014 17:09:55.394"></status>
+<status status="PASS" starttime="20201022 16:34:06.946" endtime="20201022 16:34:13.182"></status>
 </kw>
 <kw name="Quando seleciono Sign-in" library="home">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -48,17 +46,17 @@
 <arguments>
 <arg>${HOME_BUTTON_SIGIN}</arg>
 </arguments>
-<msg timestamp="20201014 17:09:55.394" level="INFO">Clicking element 'xpath=//a[@class="login"]'.</msg>
-<status status="PASS" starttime="20201014 17:09:55.394" endtime="20201014 17:09:56.436"></status>
+<msg timestamp="20201022 16:34:13.184" level="INFO">Clicking element 'xpath=//a[@class="login"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:13.183" endtime="20201022 16:34:14.235"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20201014 17:09:56.436" endtime="20201014 17:09:56.439"></status>
+<status status="PASS" starttime="20201022 16:34:14.235" endtime="20201022 16:34:14.237"></status>
 </kw>
-<status status="PASS" starttime="20201014 17:09:55.394" endtime="20201014 17:09:56.439"></status>
+<status status="PASS" starttime="20201022 16:34:13.183" endtime="20201022 16:34:14.238"></status>
 </kw>
 <kw name="Entao e apresentada tela de autenticacao" library="autenticacao">
 <kw name="Element Should Contain" library="SeleniumLibrary">
@@ -67,15 +65,15 @@
 <arg>${AUTENTICACAO_PAGE_HEAD}</arg>
 <arg>AUTHENTICATION</arg>
 </arguments>
-<msg timestamp="20201014 17:09:57.001" level="INFO">Element 'xpath=//*[@class="page-heading"]' contains text 'AUTHENTICATION'.</msg>
-<status status="PASS" starttime="20201014 17:09:56.440" endtime="20201014 17:09:57.001"></status>
+<msg timestamp="20201022 16:34:14.736" level="INFO">Element 'xpath=//*[@class="page-heading"]' contains text 'AUTHENTICATION'.</msg>
+<status status="PASS" starttime="20201022 16:34:14.239" endtime="20201022 16:34:14.736"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20201014 17:09:57.001" endtime="20201014 17:09:57.005"></status>
+<status status="PASS" starttime="20201022 16:34:14.737" endtime="20201022 16:34:14.738"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -85,83 +83,537 @@
 <assign>
 <var>${text}</var>
 </assign>
-<msg timestamp="20201014 17:09:57.005" level="INFO">${text} = MKDTGIQZ</msg>
-<status status="PASS" starttime="20201014 17:09:57.005" endtime="20201014 17:09:57.005"></status>
+<msg timestamp="20201022 16:34:14.739" level="INFO">${text} = 9Uw443RK</msg>
+<status status="PASS" starttime="20201022 16:34:14.739" endtime="20201022 16:34:14.739"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>${text}.png</arg>
 </arguments>
-<msg timestamp="20201014 17:09:57.366" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="MKDTGIQZ.png"&gt;&lt;img src="MKDTGIQZ.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20201014 17:09:57.006" endtime="20201014 17:09:57.366"></status>
+<msg timestamp="20201022 16:34:15.066" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="9Uw443RK.png"&gt;&lt;img src="9Uw443RK.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201022 16:34:14.739" endtime="20201022 16:34:15.066"></status>
 </kw>
-<status status="PASS" starttime="20201014 17:09:56.439" endtime="20201014 17:09:57.366"></status>
+<status status="PASS" starttime="20201022 16:34:14.238" endtime="20201022 16:34:15.066"></status>
 </kw>
-<status status="PASS" starttime="20201014 17:09:49.106" endtime="20201014 17:09:57.366"></status>
+<kw name="Fechar navegador" library="resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201022 16:34:15.067" endtime="20201022 16:34:17.352"></status>
 </kw>
-<kw name="Quando informo o email &quot;V@A.COM&quot; para cadastro" library="autenticacao">
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" starttime="20201022 16:34:15.067" endtime="20201022 16:34:17.352"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:03.453" endtime="20201022 16:34:17.353" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Cenario 2: Acessar formulario para novo cadastro">
+<kw name="Abrir navegador" library="resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>${AUTENTICACAO_FIELD_EMAIL}</arg>
-<arg>${AUTENTICACAO_EMAIL_TEXT}</arg>
+<arg>url:${URL}</arg>
+<arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201014 17:09:57.397" level="INFO">Typing text 'V@A.COM' into text field 'xpath=//*[@id="email_create"]'.</msg>
-<status status="PASS" starttime="20201014 17:09:57.397" endtime="20201014 17:09:57.503"></status>
+<msg timestamp="20201022 16:34:17.359" level="INFO">Opening browser 'chrome' to base url 'url:http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20201022 16:34:17.359" endtime="20201022 16:34:20.676"></status>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20201022 16:34:17.359" endtime="20201022 16:34:20.677"></status>
+</kw>
+<kw name="Dado que estou na pagina de autenticação" library="autenticacao">
+<kw name="Dado que estão na pagina HOME" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
-<arg>${AUTENTICACAO_BUTTON_SUBMIT}</arg>
+<arg>${HOME_URL}</arg>
 </arguments>
-<msg timestamp="20201014 17:09:57.503" level="INFO">Clicking element 'xpath=//*[@id="SubmitCreate"]'.</msg>
-<status status="PASS" starttime="20201014 17:09:57.503" endtime="20201014 17:09:57.571"></status>
+<msg timestamp="20201022 16:34:20.679" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20201022 16:34:20.678" endtime="20201022 16:34:26.645"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20201014 17:09:57.571" endtime="20201014 17:09:57.573"></status>
+<status status="PASS" starttime="20201022 16:34:26.646" endtime="20201022 16:34:26.648"></status>
 </kw>
-<status status="PASS" starttime="20201014 17:09:57.396" endtime="20201014 17:09:57.573"></status>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${HOME_TITLE_TEXT}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:26.655" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201022 16:34:26.648" endtime="20201022 16:34:26.655"></status>
 </kw>
-<kw name="Então é apresentado formulario de cadadastro" library="cadastro">
+<status status="PASS" starttime="20201022 16:34:20.678" endtime="20201022 16:34:26.655"></status>
+</kw>
+<kw name="Quando seleciono Sign-in" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${HOME_BUTTON_SIGIN}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:26.656" level="INFO">Clicking element 'xpath=//a[@class="login"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:26.656" endtime="20201022 16:34:27.800"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201022 16:34:27.801" endtime="20201022 16:34:27.803"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:26.655" endtime="20201022 16:34:27.804"></status>
+</kw>
+<kw name="Entao e apresentada tela de autenticacao" library="autenticacao">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${AUTENTICACAO_PAGE_HEAD}</arg>
+<arg>AUTHENTICATION</arg>
+</arguments>
+<msg timestamp="20201022 16:34:28.305" level="INFO">Element 'xpath=//*[@class="page-heading"]' contains text 'AUTHENTICATION'.</msg>
+<status status="PASS" starttime="20201022 16:34:27.804" endtime="20201022 16:34:28.306"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201022 16:34:28.306" endtime="20201022 16:34:28.308"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201022 16:34:28.308" level="INFO">${text} = KpXZOY35</msg>
+<status status="PASS" starttime="20201022 16:34:28.308" endtime="20201022 16:34:28.308"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${text}.png</arg>
+</arguments>
+<msg timestamp="20201022 16:34:28.646" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="KpXZOY35.png"&gt;&lt;img src="KpXZOY35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201022 16:34:28.308" endtime="20201022 16:34:28.646"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:27.804" endtime="20201022 16:34:28.646"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:20.677" endtime="20201022 16:34:28.646"></status>
+</kw>
+<kw name="Quando informo o email &quot;V@A.COM&quot; para cadastro" library="autenticacao">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<assign>
+<var>${AUTENTICACAO_EMAIL_TEXT}</var>
+</assign>
+<msg timestamp="20201022 16:34:28.648" level="INFO">${AUTENTICACAO_EMAIL_TEXT} = N5XWhXBZ</msg>
+<status status="PASS" starttime="20201022 16:34:28.647" endtime="20201022 16:34:28.648"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${AUTENTICACAO_FIELD_EMAIL}</arg>
+<arg>${AUTENTICACAO_EMAIL_TEXT}@a.com</arg>
+</arguments>
+<msg timestamp="20201022 16:34:28.648" level="INFO">Typing text 'N5XWhXBZ@a.com' into text field 'xpath=//*[@id="email_create"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:28.648" endtime="20201022 16:34:28.743"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${AUTENTICACAO_BUTTON_SUBMIT}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:28.744" level="INFO">Clicking element 'xpath=//*[@id="SubmitCreate"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:28.743" endtime="20201022 16:34:28.804"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201022 16:34:28.804" endtime="20201022 16:34:28.806"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:28.647" endtime="20201022 16:34:28.806"></status>
+</kw>
+<kw name="Então é apresentado formulario de cadastro" library="cadastro">
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
 <arguments>
 <arg>${CADASTRO_NAVIGATION_PAGE}</arg>
 <arg>Authentication</arg>
 </arguments>
-<msg timestamp="20201014 17:09:57.634" level="INFO">Element '//*[@class="navigation_page"]' contains text 'Authentication'.</msg>
-<status status="PASS" starttime="20201014 17:09:57.608" endtime="20201014 17:09:57.634"></status>
+<msg timestamp="20201022 16:34:28.832" level="INFO">Element '//*[@class="navigation_page"]' contains text 'Authentication'.</msg>
+<status status="PASS" starttime="20201022 16:34:28.807" endtime="20201022 16:34:28.833"></status>
 </kw>
-<status status="PASS" starttime="20201014 17:09:57.608" endtime="20201014 17:09:57.634"></status>
+<status status="PASS" starttime="20201022 16:34:28.807" endtime="20201022 16:34:28.833"></status>
 </kw>
 <kw name="Fechar navegador" library="resource" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20201014 17:09:57.656" endtime="20201014 17:09:59.989"></status>
+<status status="PASS" starttime="20201022 16:34:28.835" endtime="20201022 16:34:31.107"></status>
 </kw>
-<status status="PASS" starttime="20201014 17:09:57.655" endtime="20201014 17:09:59.989"></status>
+<status status="PASS" starttime="20201022 16:34:28.834" endtime="20201022 16:34:31.107"></status>
 </kw>
-<status status="PASS" starttime="20201014 17:09:45.550" endtime="20201014 17:10:00.027" critical="yes"></status>
+<status status="PASS" starttime="20201022 16:34:17.358" endtime="20201022 16:34:31.108" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201014 17:09:45.039" endtime="20201014 17:10:00.050"></status>
-</suite>
-<status status="PASS" starttime="20201014 17:09:44.994" endtime="20201014 17:10:00.054"></status>
+<test id="s1-t3" name="Cenario 3:Preencher formulario para novo cadastro">
+<kw name="Abrir navegador" library="resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url:${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:31.111" level="INFO">Opening browser 'chrome' to base url 'url:http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20201022 16:34:31.111" endtime="20201022 16:34:34.403"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:31.110" endtime="20201022 16:34:34.403"></status>
+</kw>
+<kw name="Dado que estou na tela de cadastro" library="cadastro">
+<kw name="Dado que estou na pagina de autenticação" library="autenticacao">
+<kw name="Dado que estão na pagina HOME" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:34.406" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20201022 16:34:34.405" endtime="20201022 16:34:40.827"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201022 16:34:40.827" endtime="20201022 16:34:40.829"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${HOME_TITLE_TEXT}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:40.835" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201022 16:34:40.829" endtime="20201022 16:34:40.835"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:34.404" endtime="20201022 16:34:40.835"></status>
+</kw>
+<kw name="Quando seleciono Sign-in" library="home">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${HOME_BUTTON_SIGIN}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:40.836" level="INFO">Clicking element 'xpath=//a[@class="login"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:40.836" endtime="20201022 16:34:41.844"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201022 16:34:41.844" endtime="20201022 16:34:41.846"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:40.835" endtime="20201022 16:34:41.847"></status>
+</kw>
+<kw name="Entao e apresentada tela de autenticacao" library="autenticacao">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${AUTENTICACAO_PAGE_HEAD}</arg>
+<arg>AUTHENTICATION</arg>
+</arguments>
+<msg timestamp="20201022 16:34:42.342" level="INFO">Element 'xpath=//*[@class="page-heading"]' contains text 'AUTHENTICATION'.</msg>
+<status status="PASS" starttime="20201022 16:34:41.847" endtime="20201022 16:34:42.342"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201022 16:34:42.342" endtime="20201022 16:34:42.344"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201022 16:34:42.345" level="INFO">${text} = j6MrSEw4</msg>
+<status status="PASS" starttime="20201022 16:34:42.344" endtime="20201022 16:34:42.345"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${text}.png</arg>
+</arguments>
+<msg timestamp="20201022 16:34:42.686" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="j6MrSEw4.png"&gt;&lt;img src="j6MrSEw4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201022 16:34:42.345" endtime="20201022 16:34:42.686"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:41.847" endtime="20201022 16:34:42.686"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:34.404" endtime="20201022 16:34:42.686"></status>
+</kw>
+<kw name="Quando informo o email &quot;${AUTENTICACAO_EMAIL_TEXT}&quot; para cadastro" library="autenticacao">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<assign>
+<var>${AUTENTICACAO_EMAIL_TEXT}</var>
+</assign>
+<msg timestamp="20201022 16:34:42.687" level="INFO">${AUTENTICACAO_EMAIL_TEXT} = hu8tTwSk</msg>
+<status status="PASS" starttime="20201022 16:34:42.687" endtime="20201022 16:34:42.687"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${AUTENTICACAO_FIELD_EMAIL}</arg>
+<arg>${AUTENTICACAO_EMAIL_TEXT}@a.com</arg>
+</arguments>
+<msg timestamp="20201022 16:34:42.687" level="INFO">Typing text 'hu8tTwSk@a.com' into text field 'xpath=//*[@id="email_create"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:42.687" endtime="20201022 16:34:42.781"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${AUTENTICACAO_BUTTON_SUBMIT}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:42.781" level="INFO">Clicking element 'xpath=//*[@id="SubmitCreate"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:42.781" endtime="20201022 16:34:42.843"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201022 16:34:42.843" endtime="20201022 16:34:42.844"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:42.686" endtime="20201022 16:34:42.844"></status>
+</kw>
+<kw name="Então é apresentado formulario de cadastro" library="cadastro">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${CADASTRO_NAVIGATION_PAGE}</arg>
+<arg>Authentication</arg>
+</arguments>
+<msg timestamp="20201022 16:34:42.871" level="INFO">Element '//*[@class="navigation_page"]' contains text 'Authentication'.</msg>
+<status status="PASS" starttime="20201022 16:34:42.846" endtime="20201022 16:34:42.871"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:42.844" endtime="20201022 16:34:42.871"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:34.404" endtime="20201022 16:34:42.871"></status>
+</kw>
+<kw name="Quando preencho as informações corretamente" library="cadastro">
+<arguments>
+<arg>Thiago</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_GENERO}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:42.873" level="INFO">Clicking element '//*[@id="id_gender1"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:42.872" endtime="20201022 16:34:44.354"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_FIRTNAME}</arg>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:44.355" level="INFO">Typing text 'Thiago' into text field '//*[@id="customer_firstname"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:44.354" endtime="20201022 16:34:44.447"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_LASTNAME}</arg>
+<arg>${last_name}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:44.447" level="INFO">Typing text 'Alves' into text field '//*[@id="customer_lastname"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:44.447" endtime="20201022 16:34:44.539"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_SENHA}</arg>
+<arg>${senha}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:44.539" level="INFO">Typing text 'hentai' into text field '//*[@id="passwd"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:44.539" endtime="20201022 16:34:44.634"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${CADASTRO_DIA}</arg>
+<arg>${dia}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:44.635" level="INFO">Selecting options from selection list '//*[@id="days"]' by value 3.</msg>
+<status status="PASS" starttime="20201022 16:34:44.634" endtime="20201022 16:34:44.716"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${CADASTRO_MES}</arg>
+<arg>${mes}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:44.717" level="INFO">Selecting options from selection list '//*[@id="months"]' by value 9.</msg>
+<status status="PASS" starttime="20201022 16:34:44.716" endtime="20201022 16:34:44.791"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${CADASTRO_ANO}</arg>
+<arg>${ano}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:44.791" level="INFO">Selecting options from selection list '//*[@id="years"]' by value 1983.</msg>
+<status status="PASS" starttime="20201022 16:34:44.791" endtime="20201022 16:34:44.864"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_FIRTNAME_ADDRESS}</arg>
+<arg>${fist_name_adress}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:44.864" level="INFO">Typing text 'Vanderlan' into text field '//*[@id="firstname"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:44.864" endtime="20201022 16:34:45.000"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_LASTNAME_ADDRESS}</arg>
+<arg>${last_name_adress}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.001" level="INFO">Typing text 'Alves' into text field '//*[@id="lastname"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:45.000" endtime="20201022 16:34:45.088"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_COMPANY}</arg>
+<arg>${company}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.089" level="INFO">Typing text 'CLARO' into text field '//*[@id="company"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:45.088" endtime="20201022 16:34:45.175"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_ADDRESS}</arg>
+<arg>${adress}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.177" level="INFO">Typing text 'Godofredo Fraga' into text field '//*[@id="address1"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:45.177" endtime="20201022 16:34:45.270"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_CITY}</arg>
+<arg>${city}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.270" level="INFO">Typing text 'São Paulo' into text field '//*[@id="city"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:45.270" endtime="20201022 16:34:45.358"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${CADASTRO_STATE}</arg>
+<arg>${state}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.359" level="INFO">Selecting options from selection list '//*[@id="id_state"]' by value 40.</msg>
+<status status="PASS" starttime="20201022 16:34:45.358" endtime="20201022 16:34:45.433"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_POSTCODE}</arg>
+<arg>${postcode}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.434" level="INFO">Typing text '05475' into text field '//*[@id="postcode"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:45.433" endtime="20201022 16:34:45.523"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${CADASTRO_COUNTRY}</arg>
+<arg>${country}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.523" level="INFO">Selecting options from selection list '//*[@id="id_country"]' by value 21.</msg>
+<status status="PASS" starttime="20201022 16:34:45.523" endtime="20201022 16:34:45.569"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_PHONE_MOBILE}</arg>
+<arg>${phone_mobile}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.569" level="INFO">Typing text '970164830' into text field '//*[@id="phone_mobile"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:45.569" endtime="20201022 16:34:45.659"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_ALIAS}</arg>
+<arg>${alias}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.659" level="INFO">Typing text 'Casa' into text field '//*[@id="alias"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:45.659" endtime="20201022 16:34:45.743"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${CADASTRO_BUTTON_SUBMIT}</arg>
+</arguments>
+<msg timestamp="20201022 16:34:45.743" level="INFO">Clicking button '//*[@id="submitAccount"]'.</msg>
+<status status="PASS" starttime="20201022 16:34:45.743" endtime="20201022 16:34:47.549"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201022 16:34:47.549" endtime="20201022 16:34:47.551"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:42.872" endtime="20201022 16:34:47.552"></status>
+</kw>
+<kw name="Então o cadsatro ocorre com sucesso" library="account">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${ACCOUNT_PAGE_HEAD}</arg>
+<arg>My account</arg>
+<arg>none</arg>
+<arg>true</arg>
+</arguments>
+<msg timestamp="20201022 16:34:47.583" level="INFO">Element 'xpath=//*[@id="center_column"]/h1' contains text 'My account'.</msg>
+<status status="PASS" starttime="20201022 16:34:47.553" endtime="20201022 16:34:47.584"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:47.552" endtime="20201022 16:34:47.584"></status>
+</kw>
+<kw name="Fechar navegador" library="resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201022 16:34:47.585" endtime="20201022 16:34:49.874"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:47.585" endtime="20201022 16:34:49.874"></status>
+</kw>
+<status status="PASS" starttime="20201022 16:34:31.109" endtime="20201022 16:34:49.875" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201022 16:34:02.930" endtime="20201022 16:34:49.877"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Test-Case">Test-Case</stat>
-<stat pass="1" fail="0" id="s1-s1" name="Cadastro usuario">Test-Case.Cadastro usuario</stat>
+<stat pass="3" fail="0" id="s1" name="Cadastro Usuario">Cadastro Usuario</stat>
 </suite>
 </statistics>
 <errors>

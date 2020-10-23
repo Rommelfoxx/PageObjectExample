@@ -15,7 +15,7 @@ Dado que estou na pagina de autenticação
       Dado que estão na pagina HOME
       Quando seleciono Sign-in
       Entao e apresentada tela de autenticacao
-
+  
 #EXECUÇÃO
 
 Quando informo o email "${AUTENTICACAO_EMAIL_TEXT}" para cadastro
