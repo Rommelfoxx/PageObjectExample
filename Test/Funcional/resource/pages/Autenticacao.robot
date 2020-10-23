@@ -12,9 +12,9 @@ ${AUTENTICACAO_EMAIL_TEXT}
 *** Keywords ***
 #PRE-CONDICÇÃO
 Dado que estou na pagina de autenticação
-      Dado que estão na pagina HOME
-      Quando seleciono Sign-in
-      Entao e apresentada tela de autenticacao
+      Home.Dado que estão na pagina HOME
+      Home.Quando seleciono Sign-in
+      Autenticacao.Entao e apresentada tela de autenticacao
   
 #EXECUÇÃO
 
