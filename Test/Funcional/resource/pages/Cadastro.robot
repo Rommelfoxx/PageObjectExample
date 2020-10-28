@@ -27,9 +27,9 @@ ${CADASTRO_BUTTON_SUBMIT}        //*[@id="submitAccount"]
 *** Keywords ***
 #Pré-Condição
 Dado que estou na tela de cadastro
-    Dado que estou na pagina de autenticação
-    Quando informo o email "${AUTENTICACAO_EMAIL_TEXT}" para cadastro
-    Então é apresentado formulario de cadastro
+    autenticacao.Dado que estou na pagina de autenticação
+    autenticacao.Quando informo o email "${AUTENTICACAO_EMAIL_TEXT}" para cadastro
+    cadastro.Então é apresentado formulario de cadastro
 
 #EXECUÇÃO
 

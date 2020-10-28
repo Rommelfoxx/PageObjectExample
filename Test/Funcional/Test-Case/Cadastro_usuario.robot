@@ -7,8 +7,6 @@ resource          ../resource/pages/account.robot
 Test Setup        Abrir navegador
 Test Teardown     Fechar navegador
 
-*** Variables ***
-
 
 *** Test Cases ***
 #Historia XXX
