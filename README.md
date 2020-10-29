@@ -6,6 +6,7 @@ Projeto para demosntrar padrão de facil manutenção para automações em Robot
 <b>Dependency</b>
 
 Robot Framework
+
 Library SeleniumLibrary
 
 ------------------------------------------------------------------------------------------------------------------------------
