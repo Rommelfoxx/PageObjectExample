@@ -33,7 +33,7 @@ Locator devem estar dentro de variaveis.
 Variais e Keywords gerais que são utilizados em mais de uma page devem ficar no arquivo Resource.robot.
 
 Keywords que fazem parte de outra pages porem são chamadas por outra keyword devem conter antes de sua definição o nome da page que faz parte inicialmente seguida de ponto.
-  EX: home.Aqui vai o nome da Keyword
+  EXemplo: home.Aqui vai o nome da Keyword
 
 <b>TEST-CASE</b>
 
