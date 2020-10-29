@@ -19,7 +19,7 @@ cd PageObjectExample\test\funcional
 robot -d result Test-case\
 
 ------------------------------------------------------------------------------------------------------------------------------
-### Padrões foram utilizados : 
+### Padrões utilizados : 
 Os arquivos foram segregados nos seguintes diretorios. 
 
 <b>RESOURCE</b>
