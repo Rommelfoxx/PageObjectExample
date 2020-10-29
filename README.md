@@ -3,8 +3,9 @@
 
 Projeto para demosntrar padrão de facil manutenção para automações em Robot framework. 
 
-<b>Dependency Robot Framework</b>
+<b>Dependency</b>
 
+Robot Framework
 Library SeleniumLibrary
 
 ------------------------------------------------------------------------------------------------------------------------------
