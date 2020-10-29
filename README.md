@@ -15,8 +15,8 @@ cd PageObjectExample\test\funcional
 
 robot -d result Test-case\
 
-### Quais padrões foram utilizados : 
 ------------------------------------------------------------------------------------------------------------------------------
+### Quais padrões foram utilizados : 
 <b>RESOURCE<b>
 
 Keywords, variaveis e Locator separados por arquivos dentro do diretorio Resource/PO conforme pagina HTML que esta faz parte.
