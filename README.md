@@ -1,3 +1,4 @@
+------------------------------------------------------------------------------------------------------------------------------
 ## Page Object model Test automation framework using Robot framework with pyton.
 
 Projeto para demosntrar padrão de facil manutenção para automações em Robot framework. 
@@ -38,4 +39,4 @@ Arquivo Test-case por funcionalidade.
 <b>RESULTS</b>
 
 Arquivos de resultados devem ficar neste diretorio. 
-
+------------------------------------------------------------------------------------------------------------------------------
