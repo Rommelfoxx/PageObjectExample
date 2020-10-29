@@ -26,4 +26,15 @@ Variaveis segue padrão de nomeclatura ${Nome da page_Tipo de objeto}, em maiusc
 
 Locator devem estar dentro de variaveis.
 
+<b>TEST-CASE</b>
+
+Cenarios de testes escritos seguindo BDD.
+
+Comentarios referindo historia correspondente ao cenario.
+
+Arquivo Test-case por funcionalidade.
+
+<b>RESULTS</b>
+
+Arquivos de resultados devem ficar neste diretorio. 
 
