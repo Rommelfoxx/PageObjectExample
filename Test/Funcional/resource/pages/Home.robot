@@ -18,17 +18,19 @@ Dado que estão na pagina HOME
       SET SELENIUM IMPLICIT WAIT   5
       Title Should Be    ${HOME_TITLE_TEXT}
 
+
 #Execução
 Quando pesquiso por "${HOME_PRODUTO}"
       Input Text    ${HOME_SEARCH_BOX}    ${HOME_PRODUTO}
       Click Button    ${HOME_BUTOON_SEARCH}
       SET SELENIUM IMPLICIT WAIT   5
 
+
 Quando adiciono "${HOME_PRODUTO}" no carrinho
       Quando pesquiso por "${HOME_PRODUTO}"
       SET SELENIUM IMPLICIT WAIT   5
       Click Element    ${HOME_ADD_CARD}
-      sleep     2
+      SET SELENIUM IMPLICIT WAIT   2
 
 Quando seleciono Sign-in
       Click Element   ${HOME_BUTTON_SIGIN}

@@ -13,11 +13,13 @@ Cenario 1:Consultar produto existente
     Quando pesquiso por "DRESS"
     Então a pagina de consulta é aberta com o resultado "DRESS"
 
+##Historia XXX
 Cenario 2:Consultar produto nao existente
     Dado que estão na pagina HOME
     Quando pesquiso por "nao existente"
     Então a pagina de consulta é aberta com o resultado "0 results have been found."
 
+##Historia XXX
 Cenario 3:Adicionar produto carrinho
     Dado que estão na pagina HOME
     Quando adiciono "Dress" no carrinho
