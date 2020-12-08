@@ -7,12 +7,13 @@ ${AUTENTICACAO_URL}              http://automationpractice.com/index.php?control
 ${AUTENTICACAO_PAGE_HEAD}        xpath=//*[@class="page-heading"]
 ${AUTENTICACAO_FIELD_EMAIL}      xpath=//*[@id="email_create"]
 ${AUTENTICACAO_BUTTON_SUBMIT}    xpath=//*[@id="SubmitCreate"]
+
 ${AUTENTICACAO_EMAIL_TEXT}
 
 *** Keywords ***
 #PRE-CONDICÇÃO
 Dado que estou na pagina de autenticação
-      Home.Dado que estão na pagina HOME
+      Home.Dado que estou na pagina home
       Home.Quando seleciono Sign-in
       Autenticacao.Entao e apresentada tela de autenticacao
   
