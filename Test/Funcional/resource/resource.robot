@@ -1,17 +1,23 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library  SeleniumLibrary
 
 
 *** Variable ***
 ${BROWSER}    chrome
-${URL}        http://automationpractice.com/
+
 
 
 *** Keywords ***
 
 Abrir navegador
-        Open Browser    url:${URL}    ${BROWSER}
+        Open Browser    url:    ${BROWSER}
 
 
 Fechar navegador
+        Capture Page Screenshot
         Close Browser
+        
+
+
+        
+

@@ -11,7 +11,7 @@ Test Teardown     Fechar navegador
 *** Test Cases ***
 #Historia XXX
 Cenario 1: Abrir tela de cadastro
-    Dado que estão na pagina HOME
+    Dado que estou na pagina home
     Quando seleciono Sign-in
     Entao E Apresentada Tela De Autenticacao
 
