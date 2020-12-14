@@ -34,7 +34,7 @@ Quando adiciono "${HOME_PRODUTO}" no carrinho
       Click Element    ${HOME_ADD_CARD}
       SET SELENIUM IMPLICIT WAIT   2
 
-Quando seleciono Sign-in
+Quando seleciono Sign
       Click Element   ${HOME_BUTTON_SIGIN}
       set selenium IMPLICIT WAIT  5
 

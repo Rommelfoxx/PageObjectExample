@@ -24,11 +24,13 @@ ${CADASTRO_PHONE_MOBILE}         //*[@id="phone_mobile"]
 ${CADASTRO_ALIAS}                //*[@id="alias"]
 ${CADASTRO_BUTTON_SUBMIT}        //*[@id="submitAccount"]
 
+${CADASTRO_ALERTA_ERRO}           xpath=//*[@id="center_column"]/div/p
+
 *** Keywords ***
 #Pré-Condição
 Dado que estou na tela de cadastro
-    autenticacao.Dado que estou na pagina de autenticação
-    autenticacao.Quando informo o email "${AUTENTICACAO_EMAIL_TEXT}" para cadastro
+    Sign.Dado que estou na pagina de Sign
+    Sign.Quando informo o email "${Sign-IN_EMAIL_TEXT}" para cadastro
     Então é apresentado formulario de cadastro
 
 #EXECUÇÃO
@@ -58,3 +60,7 @@ Quando preencho as informações corretamente
 #Validação
 Então é apresentado formulario de cadastro
     Element Should Contain   ${CADASTRO_NAVIGATION_PAGE}    Authentication
+
+Então é exibida a mensagem de erro "${mensagemErro}"
+    Wait Until Element Is Visible        ${CADASTRO_ALERTA_ERRO}   
+    Element Text Should Be               ${CADASTRO_ALERTA_ERRO}          ${mensagemErro}    

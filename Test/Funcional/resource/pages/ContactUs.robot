@@ -2,7 +2,6 @@
 Resource    Home.robot 
 Library  SeleniumLibrary
 
-
 *** Variables ***
 ${CONTACTUS_TEXT_TITULO}        xpath=//*[@id="center_column"]/h1
 ${CONTACTUS_COMBO_SUBJECT}      xpath=//*[@id="id_contact"]
@@ -11,6 +10,7 @@ ${CONTACTUS_TEXT_ORDEM}         xpath=//*[@id="id_order"]
 ${CONTACTUS_TEXT_MESSAGE}       xpath=//*[@id="message"]
 ${CONTACTUS_BUTTTON_SEND}       xpath=//*[@name="submitMessage"]
 ${CONTACTUS_ALERTA_SUCESSO}     xpath=//*[@class="alert alert-success"]
+${CONTACTUS_ALERTA_ERRO}        xpath=//*[@id="center_column"]/div/ol/li
 
 *** Keywords ***
 Então é exibida a pagina contact us com a mensagem "${mensagem}"
@@ -27,11 +27,23 @@ Quando enviar uma mensagem "${messagem}"
     Input Text                     ${CONTACTUS_TEXT_EMAIL}          Vanderlan@test.com.br  
     Input Text                     ${CONTACTUS_TEXT_ORDEM}          4545
     Input Text                     ${CONTACTUS_TEXT_MESSAGE}        ${messagem}      
-    Click Element                  ${CONTACTUS_BUTTTON_SEND} 
+    Click Element                  ${CONTACTUS_BUTTTON_SEND}
 
-Então é exibida a mensagem "${mensagemSucesso}"
+Quando enviar uma mensagem "${messagem}" sem o preenchimento do campo email
+    Select From List By Value      ${CONTACTUS_COMBO_SUBJECT}       2
+    Input Text                     ${CONTACTUS_TEXT_EMAIL}          ""
+    Input Text                     ${CONTACTUS_TEXT_ORDEM}          4545
+    Input Text                     ${CONTACTUS_TEXT_MESSAGE}        ${messagem}      
+    Click Element                  ${CONTACTUS_BUTTTON_SEND}
+
+Então é exibida a mensagem de sucesso "${mensagemSucesso}"
     Wait Until Element Is Visible        ${CONTACTUS_ALERTA_SUCESSO}   
     Element Text Should Be               ${CONTACTUS_ALERTA_SUCESSO}       ${mensagemSucesso}     False
+
+Então é exibida a mensagem de erro "${mensagemErro}"
+    Wait Until Element Is Visible        ${CONTACTUS_ALERTA_ERRO}   
+    Element Text Should Be               ${CONTACTUS_ALERTA_ERRO}          ${mensagemErro}
+
 
 
 
