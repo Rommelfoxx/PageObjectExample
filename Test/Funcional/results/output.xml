@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20201204 08:42:50.802" rpa="false">
-<suite id="s1" name="ContactUs" source="D:\PageObjectExample\Test\Funcional\Test-case\ContactUs.robot">
-<test id="s1-t1" name="Cenario 1: Acessar a tela contactUs">
+<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20201215 09:18:56.837" rpa="false">
+<suite id="s1" name="Test-Case" source="D:\PageObjectExample\PageObjectExample\Test\Funcional\test-case">
+<suite id="s1-s1" name="Logar" source="D:\PageObjectExample\PageObjectExample\Test\Funcional\test-case\Logar.robot">
+<test id="s1-s1-t1" name="Cenario 2: Preencher os campos para logar com sucesso">
 <kw name="Abrir navegador" library="resource" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -9,45 +10,174 @@
 <arg>url:</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201204 08:42:51.625" level="INFO">Opening browser 'chrome' to base url 'url:'.</msg>
+<msg timestamp="20201215 09:18:57.387" level="INFO">Opening browser 'chrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20201215 09:18:57.386" endtime="20201215 09:19:01.123"></status>
+</kw>
+<status status="PASS" starttime="20201215 09:18:57.386" endtime="20201215 09:19:01.124"></status>
+</kw>
+<kw name="Dado que estou na pagina de Sign" library="Sign">
+<kw name="Dado que estou na pagina home" library="Home">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20201215 09:19:01.126" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20201215 09:19:01.126" endtime="20201215 09:19:05.991"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201215 09:19:05.991" endtime="20201215 09:19:05.994"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${HOME_TITLE_TEXT}</arg>
+</arguments>
+<msg timestamp="20201215 09:19:06.003" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20201215 09:19:05.995" endtime="20201215 09:19:06.003"></status>
+</kw>
+<status status="PASS" starttime="20201215 09:19:01.125" endtime="20201215 09:19:06.003"></status>
+</kw>
+<kw name="Quando seleciono Sign" library="Home">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${HOME_BUTTON_SIGIN}</arg>
+</arguments>
+<msg timestamp="20201215 09:19:06.004" level="INFO">Clicking element 'xpath=//a[@class="login"]'.</msg>
+<status status="PASS" starttime="20201215 09:19:06.004" endtime="20201215 09:19:08.688"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201215 09:19:08.688" endtime="20201215 09:19:08.691"></status>
+</kw>
+<status status="PASS" starttime="20201215 09:19:06.003" endtime="20201215 09:19:08.691"></status>
+</kw>
+<kw name="Entao E Apresentada Tela De Sign" library="Sign">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${Sign-IN_PAGE_HEAD}</arg>
+<arg>AUTHENTICATION</arg>
+</arguments>
+<msg timestamp="20201215 09:19:08.727" level="INFO">Element 'xpath=//*[@class="page-heading"]' contains text 'AUTHENTICATION'.</msg>
+<status status="PASS" starttime="20201215 09:19:08.691" endtime="20201215 09:19:08.727"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201215 09:19:08.727" endtime="20201215 09:19:08.730"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20201215 09:19:08.730" level="INFO">${text} = Jg0bK3r7</msg>
+<status status="PASS" starttime="20201215 09:19:08.730" endtime="20201215 09:19:08.730"></status>
+</kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20201204 08:42:56.099" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20201204 08:42:56.098" endtime="20201204 08:42:56.099"></status>
+<arguments>
+<arg>${text}.png</arg>
+</arguments>
+<msg timestamp="20201215 09:19:09.086" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Jg0bK3r7.png"&gt;&lt;img src="Jg0bK3r7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201215 09:19:08.730" endtime="20201215 09:19:09.086"></status>
 </kw>
-<msg timestamp="20201204 08:42:56.164" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
-</msg>
-<status status="FAIL" starttime="20201204 08:42:51.624" endtime="20201204 08:42:56.165"></status>
+<status status="PASS" starttime="20201215 09:19:08.691" endtime="20201215 09:19:09.087"></status>
 </kw>
-<status status="FAIL" starttime="20201204 08:42:51.624" endtime="20201204 08:42:56.165"></status>
+<status status="PASS" starttime="20201215 09:19:01.124" endtime="20201215 09:19:09.087"></status>
+</kw>
+<kw name="Sign.Quando preencho os campos email &quot;fernando.oliveira@riachuelo.com.br&quot; e senha &quot;abacaxi&quot;" library="Sign">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Sign-IN_FIELD_EMAIL_LOGIN}</arg>
+<arg>${e-mail}</arg>
+</arguments>
+<msg timestamp="20201215 09:19:09.088" level="INFO">Typing text 'fernando.oliveira@riachuelo.com.br' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20201215 09:19:09.088" endtime="20201215 09:19:09.219"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Sign-IN_FIELD_SENHA_LOGIN}</arg>
+<arg>${senha}</arg>
+</arguments>
+<msg timestamp="20201215 09:19:09.219" level="INFO">Typing password into text field 'xpath=//*[@id="passwd"]'.</msg>
+<msg timestamp="20201215 09:19:09.267" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20201215 09:19:09.441" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20201215 09:19:09.219" endtime="20201215 09:19:09.441"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sign-IN_BUTTON_SUBMIT_LOGIN}</arg>
+</arguments>
+<msg timestamp="20201215 09:19:09.442" level="INFO">Clicking element 'xpath=//*[@id="SubmitLogin"]'.</msg>
+<status status="PASS" starttime="20201215 09:19:09.442" endtime="20201215 09:19:10.890"></status>
+</kw>
+<status status="PASS" starttime="20201215 09:19:09.088" endtime="20201215 09:19:10.891"></status>
+</kw>
+<kw name="Então é exibido o nome do Usuário no cabeçalho &quot;Fernando Oliveira&quot;" library="Sign">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Sign-IN_ALERTA_SUCESSO}</arg>
+</arguments>
+<status status="PASS" starttime="20201215 09:19:10.892" endtime="20201215 09:19:10.930"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${Sign-IN_ALERTA_SUCESSO}</arg>
+<arg>${nomeCabecalho}</arg>
+</arguments>
+<msg timestamp="20201215 09:19:10.930" level="INFO">Verifying element 'xpath=//*[@id="header"]/div[2]/div/div/nav/div[1]/a/span' contains exact text 'Fernando Oliveira'.</msg>
+<status status="PASS" starttime="20201215 09:19:10.930" endtime="20201215 09:19:10.955"></status>
+</kw>
+<status status="PASS" starttime="20201215 09:19:10.892" endtime="20201215 09:19:10.955"></status>
 </kw>
 <kw name="Fechar navegador" library="resource" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20201204 08:42:56.167" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20201204 08:42:56.167" endtime="20201204 08:42:56.167"></status>
+<msg timestamp="20201215 09:19:11.298" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201215 09:19:10.956" endtime="20201215 09:19:11.298"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20201204 08:42:56.167" endtime="20201204 08:42:56.167"></status>
+<status status="PASS" starttime="20201215 09:19:11.299" endtime="20201215 09:19:13.615"></status>
 </kw>
-<status status="PASS" starttime="20201204 08:42:56.166" endtime="20201204 08:42:56.168"></status>
+<status status="PASS" starttime="20201215 09:19:10.956" endtime="20201215 09:19:13.616"></status>
 </kw>
-<status status="FAIL" starttime="20201204 08:42:51.622" endtime="20201204 08:42:56.168" critical="yes">Setup failed:
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
-</status>
+<status status="PASS" starttime="20201215 09:18:57.385" endtime="20201215 09:19:13.616" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20201204 08:42:50.810" endtime="20201204 08:42:56.175"></status>
+<status status="PASS" starttime="20201215 09:18:56.877" endtime="20201215 09:19:13.622"></status>
+</suite>
+<status status="PASS" starttime="20201215 09:18:56.842" endtime="20201215 09:19:13.625"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="ContactUs">ContactUs</stat>
+<stat pass="1" fail="0" id="s1" name="Test-Case">Test-Case</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Logar">Test-Case.Logar</stat>
 </suite>
 </statistics>
 <errors>
