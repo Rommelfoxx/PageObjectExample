@@ -12,7 +12,7 @@ Test Teardown     Fechar navegador
 Cenario 1: Preencher os campos para logar com erro
     Dado que estou na pagina de Sign
     Quando preencho as informações com erro
-    Então é exibida a mensagem de erro "Authentication failed."
+    Sign.Então é exibida a mensagem de erro "Authentication failed."
 
 #Historia XXX - Cenário de Logar com um usuário válido
 Cenario 2: Preencher os campos para logar com sucesso

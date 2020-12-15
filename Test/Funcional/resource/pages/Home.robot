@@ -27,7 +27,6 @@ Quando pesquiso por "${HOME_PRODUTO}"
       Click Button    ${HOME_BUTOON_SEARCH}
       SET SELENIUM IMPLICIT WAIT   5
 
-
 Quando adiciono "${HOME_PRODUTO}" no carrinho
       Quando pesquiso por "${HOME_PRODUTO}"
       SET SELENIUM IMPLICIT WAIT   5
@@ -40,10 +39,8 @@ Quando seleciono Sign
 
 Quando eu clico no botão contact us
       Click Element     ${HOME_LINK_CONTACTUS}
-      
-
+        
 #Validação
-
 Então a pagina de consulta é aberta com o resultado "${HOME_PRODUTO}"
       SET SELENIUM IMPLICIT WAIT   5
       Element Should Contain    ${HOME_TEXT_CONSULTA}      ${HOME_PRODUTO}
