@@ -12,7 +12,7 @@ ${HOME_ADD_CARD}               xpath=//*[@title="Add to cart"]
 ${HOME_LINK_CONTACTUS}         xpath=//*[@title="Contact Us"]
 ${HOME_BUTTON_SIGIN}           xpath=//a[@class="login"]
 
-
+#Arquivo inicial do curso de RobotFramework
 *** Keywords ***
 #Pre-condição
 Dado que estou na pagina home
