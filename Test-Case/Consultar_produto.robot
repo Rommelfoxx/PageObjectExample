@@ -22,7 +22,7 @@ Cenario 2:Consultar produto nao existente
 Cenario 3:Adicionar produto carrinho
     Dado que estou na pagina home
     Quando adiciono "Dress" no carrinho
-    Então é apresentado o carrinho contendo "Dress"
+    Então é apresentado o carrinho contendo "DRESS"
 
 
 

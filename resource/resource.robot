@@ -11,7 +11,7 @@ ${BROWSER}    chrome
 *** Keywords ***
 
 Abrir navegador
-        Open Browser    url:    ${BROWSER}
+        Open Browser    url:    ${BROWSER}       remote_url=http://localhost:4445/wd/hub
 
 
 Fechar navegador

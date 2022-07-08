@@ -4,7 +4,7 @@ Library  SeleniumLibrary
 
 *** Variables ***
 ${HOME_URL}              http://automationpractice.com/
-${CARRINHO_FIELD}        XPATH=//*[@id="layer_cart_product_title"]
+${CARRINHO_FIELD}        XPATH=//*[@class="lighter"]
 
 
 *** Keywords ***

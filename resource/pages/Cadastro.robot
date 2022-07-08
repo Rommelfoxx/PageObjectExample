@@ -30,11 +30,17 @@ ${CADASTRO_ALERTA_ERRO}           xpath=//*[@id="center_column"]/div/p
 #Pré-Condição
 Dado que estou na tela de cadastro
     Sign.Dado que estou na pagina de Sign
-    Sign.Quando informo o email "${Sign-IN_EMAIL_TEXT}" para cadastro
+    Sign.Quando informo o email para cadastro
     Então é apresentado formulario de cadastro
     Gerar evidencia teste
 
 #EXECUÇÃO
+
+Dado que eu já possua um login cadastrado 
+    Dado que estou na tela de cadastro
+    Quando preencho as informações corretamente   Thiago
+    Então o cadastro ocorre com sucesso
+
 
 Quando preencho as informações corretamente
       [Arguments]   ${name}=Vanderlan   ${last_name}=Alves  ${senha}=hentai    ${dia}=3    ${mes}=9    ${ano}=1983    ${fist_name_adress}=Vanderlan   ${last_name_adress}=Alves   ${company}=CLARO    ${adress}=Godofredo Fraga   ${city}=São Paulo   ${state}=40    ${postcode}=05475   ${country}=21    ${phone_mobile}=970164830   ${alias}=Casa
@@ -68,3 +74,4 @@ Então é exibida a mensagem de erro "${mensagemErro}"
     Wait Until Element Is Visible        ${CADASTRO_ALERTA_ERRO}   
     Element Text Should Be               ${CADASTRO_ALERTA_ERRO}          ${mensagemErro}   
     Gerar evidencia teste 
+

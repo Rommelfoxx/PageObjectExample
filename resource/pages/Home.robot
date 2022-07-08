@@ -37,7 +37,9 @@ Quando adiciono "${HOME_PRODUTO}" no carrinho
       Gerar evidencia teste
 
 Quando seleciono Sign
-      Click Element   ${HOME_BUTTON_SIGIN}
+      Wait Until Element Is Visible    ${HOME_BUTTON_SIGIN}
+      Wait Until Keyword Succeeds      2 sec    1 sec    Click Element   ${HOME_BUTTON_SIGIN}
+      Capture Page Screenshot        
       set selenium IMPLICIT WAIT  5
       Gerar evidencia teste
 

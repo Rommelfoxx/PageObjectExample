@@ -18,7 +18,7 @@ Cenario 1: Abrir tela de cadastro
 #Historia XXX
 Cenario 2: Acessar formulario para novo cadastro
     Dado que estou na pagina de Sign
-    Quando informo o email "V@A.COM" para cadastro
+    Quando informo o email para cadastro
     Então é apresentado formulario de cadastro
 
 #Historia XXX
