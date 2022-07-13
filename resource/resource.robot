@@ -4,7 +4,7 @@ Library    String
 
 
 *** Variable ***
-${BROWSER}    chrome
+${BROWSER}    headlesschrome
 
 
 
