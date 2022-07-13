@@ -1,13 +1,7 @@
 *** Settings ***
-<<<<<<< HEAD
 Resource          ../resource/pages/home.robot
 Resource          ../resource/resource.robot
 resource          ../resource/pages/sign.robot
-=======
-resource          ../resource/pages/home.robot
-resource          ../resource/resource.robot
-resource          ../resource/pages/Sign.robot
->>>>>>> ecaf38604d0763e6b58cb9ec0a6a68a3ab0f8be1
 resource          ../resource/pages/cadastro.robot
 resource          ../resource/pages/account.robot
 Test Setup        Abrir navegador
