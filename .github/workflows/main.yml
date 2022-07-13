@@ -20,7 +20,7 @@ jobs:
           if: always()
           with:
             name: reports
-            path: ${{ github.workspace }}/reports
+            path: /reports
     
     generate_report:
         if: always()
