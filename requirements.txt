@@ -1,2 +1,5 @@
+
+robotframework-browser
+robotframework-axelibrary
 robotframework-seleniumlibrary
 webdrivermanager
