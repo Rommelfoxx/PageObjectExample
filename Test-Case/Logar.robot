@@ -1,6 +1,6 @@
 *** Settings ***
 Resource          ../resource/resource.robot
-resource          ../resource/pages/Sign.robot
+resource          ../resource/pages/sign.robot
 Test Setup        Abrir navegador
 Test Teardown     Fechar navegador
 

@@ -1,7 +1,7 @@
 *** Settings ***
 Resource          ../resource/pages/home.robot
 Resource          ../resource/resource.robot
-resource          ../resource/pages/Sign.robot
+resource          ../resource/pages/sign.robot
 resource          ../resource/pages/cadastro.robot
 resource          ../resource/pages/account.robot
 Test Setup        Abrir navegador
