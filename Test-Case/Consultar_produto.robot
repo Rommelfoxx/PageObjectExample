@@ -1,7 +1,7 @@
 *** Settings ***
-Resource          ../resource/pages/home.robot
-Resource          ../resource/pages/carrinho.robot
-Resource          ../resource/resource.robot
+resource          ../resource/pages/home.robot
+resource          ../resource/pages/carrinho.robot
+resource          ../resource/resource.robot
 Test Setup         Abrir navegador
 Test Teardown      Fechar navegador
 
