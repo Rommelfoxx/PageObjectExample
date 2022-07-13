@@ -32,4 +32,4 @@ jobs:
     - name: Run Tests
       run: |
             mkdir results
-            robot -d ./reports ./TestCase
+            robot -d ./reports ./Test-Case
