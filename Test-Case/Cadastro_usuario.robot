@@ -1,6 +1,6 @@
 *** Settings ***
-Resource          ../resource/pages/home.robot
-Resource          ../resource/resource.robot
+resource          ../resource/pages/home.robot
+resource          ../resource/resource.robot
 resource          ../resource/pages/Sign.robot
 resource          ../resource/pages/cadastro.robot
 resource          ../resource/pages/account.robot
