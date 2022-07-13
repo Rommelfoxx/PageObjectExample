@@ -11,7 +11,7 @@ ${BROWSER}    chrome
 *** Keywords ***
 #testes remotos pelo Open Browser
 Abrir navegador
-    Open Browser    url:    ${BROWSER}    remote_url=http://localhost:4445/wd/hub
+    Open Browser    url:    ${BROWSER}    
 
 # testes remotos pelo Webdriver 
 #Abrir navegador
