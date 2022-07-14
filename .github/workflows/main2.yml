@@ -17,7 +17,7 @@ jobs:
           uses: joonvena/robotframework-docker-action@v0.1
           env:
             BROWSER: chrome
-            ROBOT_TESTS_DIR: ./test-case
+            ROBOT_TESTS_DIR: ${{ github.workspace }}/Test-case
             ROBOT_REPORTS_DIR: ./reports
         - name: Upload test results
           uses: actions/upload-artifact@v1
