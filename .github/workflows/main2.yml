@@ -18,15 +18,18 @@ jobs:
           env:
             BROWSER: chrome
             ROBOT_TESTS_DIR: ${{ github.workspace }}/Test-case
-            ROBOT_REPORTS_DIR: ./reports
+            ROBOT_REPORTS_DIR: ./results
+        - name: verificar diretorio
+          run: |
+              ls
+              dir 
         - name: Upload test results
           uses: actions/upload-artifact@v1
           if: always()
           with:
             name: reports
             path: ./reports
-            run: |
-             ls
+
     
     generate_report:
         if: always()
