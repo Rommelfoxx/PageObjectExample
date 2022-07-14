@@ -3,7 +3,6 @@
 
 name: Robot Framework
 
-name: Robot Framework
 
 on:
   push:
