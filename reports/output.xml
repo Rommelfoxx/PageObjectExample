@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220714 13:54:13.545" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Tests" source="C:\Estudo\PageObjectExample\robot_tests">
+<suite id="s1-s1" name="Cadastro Usuario" source="C:\Estudo\PageObjectExample\robot_tests\cadastro_usuario.robot">
+<test id="s1-s1-t1" name="Cenario 1: Abrir tela de cadastro" line="13">
+<kw name="Abrir navegador" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220714 13:54:15.131" level="INFO">Opening browser 'headlesschrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220714 13:54:15.131" endtime="20220714 13:54:16.814"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:15.131" endtime="20220714 13:54:16.814"/>
+</kw>
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:16.815" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:16.815" endtime="20220714 13:54:19.777"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:19.777" endtime="20220714 13:54:19.778"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:19.826" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:19.826" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:19.778" endtime="20220714 13:54:19.846"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:19.847" endtime="20220714 13:54:19.847"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:16.815" endtime="20220714 13:54:19.847"/>
+</kw>
+<kw name="Quando seleciono Sign" library="home">
+<status status="NOT RUN" starttime="20220714 13:54:19.848" endtime="20220714 13:54:19.848"/>
+</kw>
+<kw name="Entao E Apresentada Tela De SIGN" library="sign">
+<status status="NOT RUN" starttime="20220714 13:54:19.849" endtime="20220714 13:54:19.849"/>
+</kw>
+<kw name="Fechar navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220714 13:54:19.850" endtime="20220714 13:54:22.040"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:19.850" endtime="20220714 13:54:22.041"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:15.130" endtime="20220714 13:54:22.041">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<test id="s1-s1-t2" name="Cenario 2: Acessar formulario para novo cadastro" line="19">
+<kw name="Abrir navegador" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220714 13:54:22.045" level="INFO">Opening browser 'headlesschrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220714 13:54:22.045" endtime="20220714 13:54:23.317"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:22.044" endtime="20220714 13:54:23.318"/>
+</kw>
+<kw name="Dado que estou na pagina de Sign" library="sign">
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:23.319" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:23.319" endtime="20220714 13:54:23.772"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:23.772" endtime="20220714 13:54:23.773"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:23.827" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:23.828" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:23.773" endtime="20220714 13:54:23.828"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:23.828" endtime="20220714 13:54:23.828"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:23.319" endtime="20220714 13:54:23.829"/>
+</kw>
+<kw name="Quando seleciono Sign" library="home">
+<status status="NOT RUN" starttime="20220714 13:54:23.829" endtime="20220714 13:54:23.829"/>
+</kw>
+<kw name="Entao E Apresentada Tela De SIGN" library="sign">
+<status status="NOT RUN" starttime="20220714 13:54:23.829" endtime="20220714 13:54:23.829"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:23.829" endtime="20220714 13:54:23.829"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:23.318" endtime="20220714 13:54:23.830"/>
+</kw>
+<kw name="Quando informo o email para cadastro" library="sign">
+<status status="NOT RUN" starttime="20220714 13:54:23.831" endtime="20220714 13:54:23.831"/>
+</kw>
+<kw name="Então é apresentado formulario de cadastro" library="cadastro">
+<status status="NOT RUN" starttime="20220714 13:54:23.832" endtime="20220714 13:54:23.832"/>
+</kw>
+<kw name="Fechar navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220714 13:54:23.832" endtime="20220714 13:54:26.032"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:23.832" endtime="20220714 13:54:26.032"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:22.044" endtime="20220714 13:54:26.034">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<test id="s1-s1-t3" name="Cenario 3:Preencher formulario para novo cadastro" line="25">
+<kw name="Abrir navegador" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220714 13:54:26.040" level="INFO">Opening browser 'headlesschrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220714 13:54:26.039" endtime="20220714 13:54:27.174"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:26.039" endtime="20220714 13:54:27.174"/>
+</kw>
+<kw name="Dado que estou na tela de cadastro" library="cadastro">
+<kw name="Dado que estou na pagina de Sign" library="sign">
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:27.175" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:27.175" endtime="20220714 13:54:27.618"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:27.618" endtime="20220714 13:54:27.620"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:27.677" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:27.677" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:27.620" endtime="20220714 13:54:27.677"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:27.677" endtime="20220714 13:54:27.677"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:27.175" endtime="20220714 13:54:27.678"/>
+</kw>
+<kw name="Quando seleciono Sign" library="home">
+<status status="NOT RUN" starttime="20220714 13:54:27.678" endtime="20220714 13:54:27.678"/>
+</kw>
+<kw name="Entao E Apresentada Tela De SIGN" library="sign">
+<status status="NOT RUN" starttime="20220714 13:54:27.678" endtime="20220714 13:54:27.678"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:27.678" endtime="20220714 13:54:27.678"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:27.175" endtime="20220714 13:54:27.678"/>
+</kw>
+<kw name="Quando informo o email para cadastro" library="sign">
+<status status="NOT RUN" starttime="20220714 13:54:27.678" endtime="20220714 13:54:27.678"/>
+</kw>
+<kw name="Então é apresentado formulario de cadastro" library="cadastro">
+<status status="NOT RUN" starttime="20220714 13:54:27.679" endtime="20220714 13:54:27.679"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:27.679" endtime="20220714 13:54:27.679"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:27.174" endtime="20220714 13:54:27.679"/>
+</kw>
+<kw name="Quando preencho as informações corretamente" library="cadastro">
+<arg>Thiago</arg>
+<status status="NOT RUN" starttime="20220714 13:54:27.680" endtime="20220714 13:54:27.680"/>
+</kw>
+<kw name="Então o cadastro ocorre com sucesso" library="account">
+<status status="NOT RUN" starttime="20220714 13:54:27.680" endtime="20220714 13:54:27.680"/>
+</kw>
+<kw name="Fechar navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220714 13:54:27.681" endtime="20220714 13:54:29.861"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:27.681" endtime="20220714 13:54:29.861"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:26.037" endtime="20220714 13:54:29.862">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<status status="FAIL" starttime="20220714 13:54:13.570" endtime="20220714 13:54:29.863"/>
+</suite>
+<suite id="s1-s2" name="Consultar Produto" source="C:\Estudo\PageObjectExample\robot_tests\consultar_produto.robot">
+<test id="s1-s2-t1" name="Cenario 1:Consultar produto existente" line="10">
+<kw name="Abrir navegador" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220714 13:54:29.882" level="INFO">Opening browser 'headlesschrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220714 13:54:29.882" endtime="20220714 13:54:31.090"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:29.882" endtime="20220714 13:54:31.090"/>
+</kw>
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:31.091" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:31.091" endtime="20220714 13:54:31.509"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:31.509" endtime="20220714 13:54:31.510"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:31.559" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:31.559" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:31.510" endtime="20220714 13:54:31.559"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:31.559" endtime="20220714 13:54:31.559"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:31.091" endtime="20220714 13:54:31.560"/>
+</kw>
+<kw name="Quando pesquiso por &quot;DRESS&quot;" library="home" sourcename="Quando pesquiso por &quot;${HOME_PRODUTO}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:31.561" endtime="20220714 13:54:31.561"/>
+</kw>
+<kw name="Então a pagina de consulta é aberta com o resultado &quot;DRESS&quot;" library="home" sourcename="Então a pagina de consulta é aberta com o resultado &quot;${HOME_PRODUTO}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:31.561" endtime="20220714 13:54:31.561"/>
+</kw>
+<kw name="Fechar navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220714 13:54:31.562" endtime="20220714 13:54:33.768"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:31.562" endtime="20220714 13:54:33.768"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:29.881" endtime="20220714 13:54:33.770">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<test id="s1-s2-t2" name="Cenario 2:Consultar produto nao existente" line="16">
+<kw name="Abrir navegador" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220714 13:54:33.778" level="INFO">Opening browser 'headlesschrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220714 13:54:33.777" endtime="20220714 13:54:34.994"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:33.776" endtime="20220714 13:54:34.994"/>
+</kw>
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:34.996" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:34.995" endtime="20220714 13:54:35.432"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:35.432" endtime="20220714 13:54:35.433"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:35.501" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:35.502" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:35.434" endtime="20220714 13:54:35.502"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:35.503" endtime="20220714 13:54:35.503"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:34.995" endtime="20220714 13:54:35.503"/>
+</kw>
+<kw name="Quando pesquiso por &quot;nao existente&quot;" library="home" sourcename="Quando pesquiso por &quot;${HOME_PRODUTO}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:35.504" endtime="20220714 13:54:35.504"/>
+</kw>
+<kw name="Então a pagina de consulta é aberta com o resultado &quot;0 results have been found.&quot;" library="home" sourcename="Então a pagina de consulta é aberta com o resultado &quot;${HOME_PRODUTO}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:35.504" endtime="20220714 13:54:35.504"/>
+</kw>
+<kw name="Fechar navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220714 13:54:35.505" endtime="20220714 13:54:37.722"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:35.505" endtime="20220714 13:54:37.722"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:33.775" endtime="20220714 13:54:37.724">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<test id="s1-s2-t3" name="Cenario 3:Adicionar produto carrinho" line="22">
+<kw name="Abrir navegador" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220714 13:54:37.729" level="INFO">Opening browser 'headlesschrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220714 13:54:37.729" endtime="20220714 13:54:38.884"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:37.729" endtime="20220714 13:54:38.884"/>
+</kw>
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:38.885" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:38.885" endtime="20220714 13:54:39.317"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:39.317" endtime="20220714 13:54:39.319"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:39.378" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:39.378" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:39.319" endtime="20220714 13:54:39.378"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:39.378" endtime="20220714 13:54:39.378"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:38.884" endtime="20220714 13:54:39.379"/>
+</kw>
+<kw name="Quando adiciono &quot;Dress&quot; no carrinho" library="home" sourcename="Quando adiciono &quot;${HOME_PRODUTO}&quot; no carrinho">
+<status status="NOT RUN" starttime="20220714 13:54:39.379" endtime="20220714 13:54:39.380"/>
+</kw>
+<kw name="Então é apresentado o carrinho contendo &quot;DRESS&quot;" library="carrinho" sourcename="Então é apresentado o carrinho contendo &quot;${CARRINHO_TEXT}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:39.380" endtime="20220714 13:54:39.380"/>
+</kw>
+<kw name="Fechar navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220714 13:54:39.381" endtime="20220714 13:54:41.587"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:39.381" endtime="20220714 13:54:41.587"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:37.728" endtime="20220714 13:54:41.589">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<status status="FAIL" starttime="20220714 13:54:29.866" endtime="20220714 13:54:41.594"/>
+</suite>
+<suite id="s1-s3" name="contactUs" source="C:\Estudo\PageObjectExample\robot_tests\contactUs.robot">
+<kw name="Abrir navegador" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220714 13:54:41.631" level="INFO">Opening browser 'headlesschrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220714 13:54:41.631" endtime="20220714 13:54:42.831"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:41.630" endtime="20220714 13:54:42.831"/>
+</kw>
+<test id="s1-s3-t1" name="Cenario 1: Acessar a tela contactUs" line="10">
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:42.833" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:42.832" endtime="20220714 13:54:43.263"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:43.263" endtime="20220714 13:54:43.265"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:43.325" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:43.326" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:43.265" endtime="20220714 13:54:43.326"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:43.326" endtime="20220714 13:54:43.326"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:42.832" endtime="20220714 13:54:43.327"/>
+</kw>
+<kw name="Quando eu clico no botão contact us" library="home">
+<status status="NOT RUN" starttime="20220714 13:54:43.327" endtime="20220714 13:54:43.327"/>
+</kw>
+<kw name="Então é exibida a pagina contact us com a mensagem &quot;CUSTOMER SERVICE - CONTACT US&quot;" library="contactUs" sourcename="Então é exibida a pagina contact us com a mensagem &quot;${mensagem}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:43.328" endtime="20220714 13:54:43.328"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:42.831" endtime="20220714 13:54:43.329">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<test id="s1-s3-t2" name="Cenario 2: Enviar uma mensagem na tela contact us" line="15">
+<kw name="Dado que estou na tela de contact us" library="contactUs">
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:43.331" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:43.331" endtime="20220714 13:54:43.515"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:43.515" endtime="20220714 13:54:43.517"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:43.574" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:43.574" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:43.517" endtime="20220714 13:54:43.574"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:43.574" endtime="20220714 13:54:43.574"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:43.331" endtime="20220714 13:54:43.575"/>
+</kw>
+<kw name="Quando eu clico no botão contact us" library="home">
+<status status="NOT RUN" starttime="20220714 13:54:43.575" endtime="20220714 13:54:43.575"/>
+</kw>
+<kw name="Então é exibida a pagina contact us com a mensagem &quot;${mensagem}&quot;" library="contactUs" sourcename="Então é exibida a pagina contact us com a mensagem &quot;${mensagem}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:43.575" endtime="20220714 13:54:43.575"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:43.575" endtime="20220714 13:54:43.575"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:43.331" endtime="20220714 13:54:43.576"/>
+</kw>
+<kw name="Quando enviar uma mensagem &quot;Pedido realizado com sucesso&quot;" library="contactUs" sourcename="Quando enviar uma mensagem &quot;${messagem}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:43.577" endtime="20220714 13:54:43.577"/>
+</kw>
+<kw name="Então é exibida a mensagem de sucesso &quot;Your message has been successfully sent to our team.&quot;" library="contactUs" sourcename="Então é exibida a mensagem de sucesso &quot;${mensagemSucesso}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:43.577" endtime="20220714 13:54:43.577"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:43.330" endtime="20220714 13:54:43.578">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<test id="s1-s3-t3" name="Cenario 3: Enviar uma mensagem de erro ao não preencher o campo email" line="20">
+<kw name="Dado que estou na tela de contact us" library="contactUs">
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:43.581" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:43.581" endtime="20220714 13:54:43.755"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:43.755" endtime="20220714 13:54:43.757"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:43.835" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:43.835" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:43.757" endtime="20220714 13:54:43.835"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:43.836" endtime="20220714 13:54:43.836"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:43.581" endtime="20220714 13:54:43.836"/>
+</kw>
+<kw name="Quando eu clico no botão contact us" library="home">
+<status status="NOT RUN" starttime="20220714 13:54:43.836" endtime="20220714 13:54:43.836"/>
+</kw>
+<kw name="Então é exibida a pagina contact us com a mensagem &quot;${mensagem}&quot;" library="contactUs" sourcename="Então é exibida a pagina contact us com a mensagem &quot;${mensagem}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:43.837" endtime="20220714 13:54:43.837"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:43.837" endtime="20220714 13:54:43.837"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:43.581" endtime="20220714 13:54:43.837"/>
+</kw>
+<kw name="Quando enviar uma mensagem &quot;Pedido realizado com sucesso&quot; sem o preenchimento do campo email" library="contactUs" sourcename="Quando enviar uma mensagem &quot;${messagem}&quot; sem o preenchimento do campo email">
+<status status="NOT RUN" starttime="20220714 13:54:43.838" endtime="20220714 13:54:43.838"/>
+</kw>
+<kw name="Então é exibida a mensagem de erro &quot;Invalid email address.&quot;" library="contactUs" sourcename="Então é exibida a mensagem de erro &quot;${mensagemErro}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:43.839" endtime="20220714 13:54:43.839"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:43.580" endtime="20220714 13:54:43.840">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<kw name="Fechar navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220714 13:54:43.842" endtime="20220714 13:54:46.066"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:43.842" endtime="20220714 13:54:46.066"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:41.599" endtime="20220714 13:54:46.066"/>
+</suite>
+<suite id="s1-s4" name="Logar" source="C:\Estudo\PageObjectExample\robot_tests\logar.robot">
+<test id="s1-s4-t1" name="Cenario 1: Preencher os campos para logar com erro" line="9">
+<kw name="Abrir navegador" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url:</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220714 13:54:46.088" level="INFO">Opening browser 'headlesschrome' to base url 'url:'.</msg>
+<status status="PASS" starttime="20220714 13:54:46.087" endtime="20220714 13:54:47.290"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:46.087" endtime="20220714 13:54:47.290"/>
+</kw>
+<kw name="Dado que estou na pagina de Sign" library="sign">
+<kw name="Dado que estou na pagina home" library="home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220714 13:54:47.291" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20220714 13:54:47.291" endtime="20220714 13:54:47.711"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220714 13:54:47.711" endtime="20220714 13:54:47.712"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${HOME_TITLE_TEXT}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220714 13:54:47.762" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220714 13:54:47.762" level="FAIL">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</msg>
+<status status="FAIL" starttime="20220714 13:54:47.713" endtime="20220714 13:54:47.763"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:47.763" endtime="20220714 13:54:47.763"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:47.291" endtime="20220714 13:54:47.763"/>
+</kw>
+<kw name="Quando seleciono Sign" library="home">
+<status status="NOT RUN" starttime="20220714 13:54:47.763" endtime="20220714 13:54:47.763"/>
+</kw>
+<kw name="Entao E Apresentada Tela De SIGN" library="sign">
+<status status="NOT RUN" starttime="20220714 13:54:47.763" endtime="20220714 13:54:47.763"/>
+</kw>
+<kw name="Gerar evidencia teste" library="resource">
+<status status="NOT RUN" starttime="20220714 13:54:47.763" endtime="20220714 13:54:47.763"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:47.291" endtime="20220714 13:54:47.764"/>
+</kw>
+<kw name="Quando preencho as informações com erro" library="sign">
+<status status="NOT RUN" starttime="20220714 13:54:47.765" endtime="20220714 13:54:47.765"/>
+</kw>
+<kw name="Então é exibida a mensagem de erro &quot;Authentication failed.&quot;" library="sign" sourcename="Então é exibida a mensagem de erro &quot;${mensagemErro}&quot;">
+<status status="NOT RUN" starttime="20220714 13:54:47.765" endtime="20220714 13:54:47.766"/>
+</kw>
+<kw name="Fechar navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220714 13:54:47.767" endtime="20220714 13:54:49.977"/>
+</kw>
+<status status="PASS" starttime="20220714 13:54:47.766" endtime="20220714 13:54:49.977"/>
+</kw>
+<status status="FAIL" starttime="20220714 13:54:46.086" endtime="20220714 13:54:49.978">Title should have been 'My Store' but was '508 Resource Limit Is Reached'.</status>
+</test>
+<status status="FAIL" starttime="20220714 13:54:46.072" endtime="20220714 13:54:49.979"/>
+</suite>
+<status status="FAIL" starttime="20220714 13:54:13.547" endtime="20220714 13:54:49.982"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="10" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="10" skip="0" id="s1" name="Robot Tests">Robot Tests</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="Cadastro Usuario">Robot Tests.Cadastro Usuario</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s2" name="Consultar Produto">Robot Tests.Consultar Produto</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s3" name="contactUs">Robot Tests.contactUs</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s4" name="Logar">Robot Tests.Logar</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
