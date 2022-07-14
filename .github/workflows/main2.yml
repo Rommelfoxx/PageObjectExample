@@ -25,6 +25,8 @@ jobs:
           with:
             name: reports
             path: ./reports
+            run: |
+             ls
     
     generate_report:
         if: always()
