@@ -1,7 +1,7 @@
 
 #primeira versão 
 
-me: Robot Framework
+name: Robot Framework
 
 on:
   push:
