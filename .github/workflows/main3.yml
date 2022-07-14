@@ -8,6 +8,6 @@ jobs:
         - name: Execute tests
           uses: tarathep/robotframework-github-action@v1.0
           with:
-           tests_dir: '${{ github.workspace }}/tests/robot'
-           reports_dir: '${{ github.workspace }}/tests/robot/reports'
+           tests_dir: '${{ github.workspace }}/robot_tests'
+           reports_dir: '${{ github.workspace }}/reports'
 
