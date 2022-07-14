@@ -1,8 +1,4 @@
-
-#primeira versão 
-
 name: Robot Framework
-
 
 on:
   push:
@@ -12,24 +8,19 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@v1
-        - name: verificar diretorio
-          run: |
-              ls
-              dir 
+        - uses: actions/checkout@v2
         - name: Execute tests
           uses: joonvena/robotframework-docker-action@v0.1
           env:
             BROWSER: chrome
-            ROBOT_TESTS_DIR: Test-case
-            ROBOT_REPORTS_DIR: results
+            ROBOT_TESTS_DIR: ${{ github.workspace }}/robot_tests
+            ROBOT_REPORTS_DIR: ${{ github.workspace }}/reports
         - name: Upload test results
           uses: actions/upload-artifact@v1
           if: always()
           with:
             name: reports
-            path: ./reports
-
+            path: ${{ github.workspace }}/reports
     
     generate_report:
         if: always()
