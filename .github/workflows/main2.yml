@@ -3,6 +3,8 @@
 
 name: Robot Framework
 
+name: Robot Framework
+
 on:
   push:
     branches: [ master ]
@@ -23,7 +25,7 @@ jobs:
           if: always()
           with:
             name: reports
-            path: /reports
+            path: ${{ github.workspace }}/reports
     
     generate_report:
         if: always()
