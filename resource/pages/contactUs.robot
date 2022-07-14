@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    Home.robot 
+Resource    home.robot 
 Library  SeleniumLibrary
 
 *** Variables ***
