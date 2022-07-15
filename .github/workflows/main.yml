@@ -1,4 +1,4 @@
-name: TEste com robot framework
+name: Teste com robot framework
 
 on: [push]
 
