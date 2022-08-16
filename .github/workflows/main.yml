@@ -1,6 +1,6 @@
 name: Teste com robot framework
 
-on: [push]
+on: workflow_dispatch
 
 jobs:
   run_automation:
